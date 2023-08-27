@@ -125,6 +125,11 @@ Log out the variable named: john to see its value
 Log out the variable named: rest to see its value
 */
 
+// here is my solution 
+let [john, ...rest] = students.map(student => [student.name, student.results]);
+console.log(john);
+console.log(rest);
+
 // below are the 2 ways to solve the challenge
 
      // single line, used different variable names so as not to clash with those below.
@@ -134,6 +139,6 @@ console.log(Rest);
 
       // Or create function first and use in map
 const mapper = (itm) => [itm.name, itm.results];
-let [john, ...rest] = students1.map(mapper);
-console.log(john);
-console.log(rest);
+let [joohn, ...reest] = students1.map(mapper);
+console.log(joohn);
+console.log(reest);
